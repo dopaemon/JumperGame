@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acbb8b6d6ccd511448de24969bf32515, type: 3}
+  m_Name: heaven
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  staticPlatform: {fileID: -3691204852183403754, guid: 7f807391bd2725842b36454ac359c65d, type: 3}
+  movingPlatform: {fileID: -3691204852183403754, guid: 7f807391bd2725842b36454ac359c65d, type: 3}
+  breakablePlatform: {fileID: -5887728403981536426, guid: d658a5979f615174c8a8bf8705281327, type: 3}
+  springPlatform: {fileID: -3691204852183403754, guid: 7f807391bd2725842b36454ac359c65d, type: 3}
+  enemySprite: {fileID: -7230650021224138008, guid: 8876e9e4c1f5c0f49a1834a68e7df3ea, type: 3}
+  playerSprite: {fileID: -651627637669515355, guid: 4f9d5022c06a3be43ac1ef47de8724cb, type: 3}
+  background: {fileID: -2732486965544597016, guid: 8b7080ecccff1dc42ac3c9c2da6d8f11, type: 3}
+  springTop: {fileID: -5521293738940607881, guid: ed835d4f7fb7717459218a120d2b949e, type: 3}
+  powerUpSprite: {fileID: -4597573920027057649, guid: 10b0f1d75a2c2f141a9e7f1307dc89c6, type: 3}
