@@ -30,11 +30,9 @@ jobs:
       - name: Build Android Release (unsigned, Personal license)
         uses: game-ci/unity-builder@v4
         env:
-          # Personal license path: use UNITY_LICENSE + account credentials.
-          # Do NOT set UNITY_SERIAL for Personal accounts.
+          # Personal license: only use UNITY_LICENSE.
+          # Do not pass serial/email/password.
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: Android
           buildName: JumperGame
