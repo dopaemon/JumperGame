@@ -27,16 +27,17 @@ jobs:
           restore-keys: |
             Library-Android-
 
-      - name: Build Android Release (unsigned)
+      - name: Build Android Release (unsigned, Personal license)
         uses: game-ci/unity-builder@v4
         env:
+          # Personal license path: use UNITY_LICENSE + account credentials.
+          # Do NOT set UNITY_SERIAL for Personal accounts.
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: Android
           buildName: JumperGame
-          buildMethod: 
           allowDirtyBuild: false
           androidExportType: androidPackage
 
